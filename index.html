@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medisinsk Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="velkomst">
+        <h1>Velkommen til medisinsk quiz</h1>
+        <!-- Overskrift for velkomstseksjonen -->
+        <button onclick="startQuiz()">Ta quizen</button>
+        <!-- Knapp for å starte quizen-->
+    </div>
+    <div class="quizContainer" id="quizContainer" style="display:none;">
+        <h1>Medisinsk Quiz om Thyreoidea</h1>
+        <div id="quiz"></div>
+        <!-- Plassholder for quizinnhold -->
+        <button id="sjekkSvarene">Fullfør Quiz</button>
+        <!-- Knapp for å fullføre quizen-->
+        <button id="provIgjen" style="display:none;">Ta quizen igjen</button>
+        <!-- Knapp for å ta quizen igjen-->
+        <div id="resultat"></div>
+        <!-- Plassholder for resultat -->
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
