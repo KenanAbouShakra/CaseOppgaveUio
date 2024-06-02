@@ -1,94 +1,88 @@
 body {
-    /* Setter grunnleggende stil for hele siden */
-    font-family: Arial, sans-serif;
-    background-color: rgba(227, 226, 226, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+  /* Setter grunnleggende stil for hele siden */
+  font-family: Arial, sans-serif;
+  background-color: rgba(227, 226, 226, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.container,
-.quizContainer {
-    /* Stil for containere */
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container, .quizContainer {
+  /* Stil for containere */
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    /* Stil for primary knapper */
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: auto;
+  /* Stil for primary knapper */
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #00408a; /* Enda mørkere nyanse for hover */
 }
 
 .radio {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .riktig {
-    color: green;
+  color: green;
 }
 
 .galt {
-    color: red;
+  color: red;
 }
-
 
 /* Media query for skjermer mindre enn 600px bredde */
-
 @media (max-width: 599px) {
-    body {
-        padding: 10px;
-    }
-    .container,
-    .quizContainer {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-}
+  body {
+    padding: 10px;
+  }
 
+  .container,
+  .quizContainer {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
 
 /* Media query for skjermer mellom 600px og 999px bredde */
-
 @media (min-width: 600px) {
-    .container,
-    .quizContainer {
-        max-width: 80%;
-        margin: 20px 0;
-    }
+  .container,
+  .quizContainer {
+    max-width: 80%;
+    margin: 20px 0;
+  }
 }
 
-
 /* Media query for skjermer større enn 1000px bredde */
-
 @media (min-width: 1000px) {
-    .container,
-    .quizContainer {
-        max-width: 50%;
-        margin: 30px 0;
-    }
+  .container,
+  .quizContainer {
+    max-width: 50%;
+    margin: 30px 0;
+  }
 }
